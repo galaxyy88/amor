@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8e9eb">
+  <meta name="description" content="Uma pergunta especial, feita com carinho.">
+  <title>Tenho uma pergunta para você</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='86'%3E%E2%9D%A4%EF%B8%8F%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script src="config.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body class="proposal-page">
+  <div class="ambient" id="ambient" aria-hidden="true"></div>
+  <main class="proposal-card" aria-labelledby="question">
+    <span class="corner-sparkle corner-sparkle-one" aria-hidden="true">✦</span>
+    <span class="corner-sparkle corner-sparkle-two" aria-hidden="true">✧</span>
+    <div class="intro-line"><span class="intro-dot" aria-hidden="true"></span><span>Tenho uma pergunta para você...</span></div>
+    <div class="heart-mark" aria-hidden="true">♥</div>
+    <h1 id="question"><span id="personName"></span><span id="questionText"></span></h1>
+    <p class="supporting-copy">Uma resposta sincera já deixa meu dia mais bonito.</p>
+
+    <div class="button-stage" id="buttonStage" aria-label="Escolha sua resposta">
+      <button class="choice-button yes-button" id="yesButton" type="button"><span aria-hidden="true">♥</span> SIM!</button>
+      <button class="choice-button no-button" id="noButton" type="button" aria-label="Não, botão que está fugindo">💔 NÃO</button>
+      <span class="no-whisper" id="noWhisper" aria-live="polite"></span>
+    </div>
+    <p class="success-message" id="successMessage" aria-live="polite"></p>
+    <div class="card-footnote"><span aria-hidden="true">♡</span> Feito com carinho <span aria-hidden="true">♡</span></div>
+  </main>
+</body>
+</html>

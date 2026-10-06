@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8e9eb">
+  <meta name="description" content="Uma carta escrita com muito carinho.">
+  <title>Uma carta para você</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='86'%3E%E2%9D%A4%EF%B8%8F%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="carta.css">
+  <script src="config.js" defer></script>
+  <script src="carta.js" defer></script>
+</head>
+<body class="letter-page">
+  <div class="letter-ambient" id="letterAmbient" aria-hidden="true"></div>
+  <main class="letter-main">
+    <p class="letter-intro">Um pedacinho do que sinto</p>
+    <section class="letter-scene" id="letterScene" aria-label="Uma carta para você">
+      <article class="love-letter" id="loveLetter" aria-live="polite">
+        <div class="letter-rule" aria-hidden="true"><span>♡</span></div>
+        <h1 id="tituloCarta"></h1>
+        <div class="letter-message" id="mensagemCarta"></div>
+        <p class="letter-final" id="mensagemFinal"></p>
+        <p class="letter-signature" id="assinatura"></p>
+        <div class="letter-endmark" aria-hidden="true">♥</div>
+      </article>
+      <div class="envelope" id="envelope" aria-hidden="true">
+        <div class="envelope-back"></div>
+        <div class="envelope-letter-hint"></div>
+        <div class="envelope-front"></div>
+        <div class="envelope-flap"></div>
+        <div class="envelope-seal">♥</div>
+      </div>
+      <span class="scene-heart scene-heart-one" aria-hidden="true">♡</span>
+      <span class="scene-heart scene-heart-two" aria-hidden="true">✦</span>
+    </section>
+    <a class="return-link" href="index.html"><span aria-hidden="true">←</span> Voltar à pergunta</a>
+  </main>
+</body>
+</html>
